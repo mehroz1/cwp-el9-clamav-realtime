@@ -3,4 +3,5 @@
 # Usage
 
 chmod +x clamav-setup.sh
+
 sudo ./clamav-setup.sh
