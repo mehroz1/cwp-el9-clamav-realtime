@@ -2,6 +2,6 @@
 
 # Usage
 
-chmod +x clamav-setup.sh
+chmod +x install-clamav.sh
 
-sudo ./clamav-setup.sh
+sudo ./install-clamav.sh
