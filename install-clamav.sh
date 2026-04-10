@@ -37,6 +37,11 @@ fi
 mkdir -p /run/clamd.scan
 chown clamscan:clamscan /run/clamd.scan
 
+# Create log directory BEFORE cron
+mkdir -p /var/log/clamav
+chown clamscan:clamscan /var/log/clamav
+chmod 755 /var/log/clamav
+
 # Step 5: Reload + restart
 systemctl daemon-reexec
 systemctl restart clamd@scan
@@ -48,9 +53,6 @@ CRON_JOB='0 2 * * * clamscan -r /home --log=/var/log/clamav/daily.log'
 # Preserve existing crontab and append only if not already present
 (crontab -l 2>/dev/null | grep -F "$CRON_JOB") || \
 (crontab -l 2>/dev/null; echo "$CRON_JOB") | crontab -
-
-echo "Creating log directory..."
-mkdir -p /var/log/clamav
 
 echo "Final service status:"
 systemctl status clamd@scan --no-pager
