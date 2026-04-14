@@ -41,7 +41,7 @@ git clone https://github.com/yourusername/clam-auto.git
 cd clam-auto
 chmod +x clam-auto.sh
 sudo ./clam-auto.sh
-
+```
 ## ⚙️ What It Does
 
 ### 📦 Installs
