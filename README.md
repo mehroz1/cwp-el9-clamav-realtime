@@ -5,7 +5,7 @@ Automated ClamAV Deployment + Real-Time Protection for EL9 (CWP Ready)
 ![ClamAV](https://img.shields.io/badge/ClamAV-Automated-green)
 ![Systemd](https://img.shields.io/badge/Systemd-Enabled-orange)
 ![SELinux](https://img.shields.io/badge/SELinux-Supported-red)
-![License](https://img.shields.io/badge/License-Free-lightgrey)
+![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
 ---
 
@@ -157,10 +157,13 @@ tail -f /var/log/clamav/setup.log
 - Large files are skipped in real-time scanning
 
 ---
-
 ## 📜 License
 
-Free to use, modify, and distribute.
+This project is licensed under the **GNU General Public License v3.0 (GPLv3)**.
+
+You are free to use, modify, and distribute this software under the terms of the GPLv3 license.
+
+See the full license text at: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ---
 
