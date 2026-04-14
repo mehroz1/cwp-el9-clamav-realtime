@@ -1,6 +1,4 @@
-# Clamav Installation for Control Web Panel (CWP) for el9
-
-# 🛡️ clam-auto.sh
+# 🛡️ clam-auto.sh - Real-Time Protection for EL9 using clamav + inotify
 Automated ClamAV Deployment + Real-Time Protection for EL9 (CWP Ready)
 
 ![EL9](https://img.shields.io/badge/EL9-Compatible-blue)
