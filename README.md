@@ -83,22 +83,24 @@ sudo ./clam-auto.sh
 ---
 
 ### 🦠 On Virus Detection
-- File moved to:
 
 - File moved to:
+```
   /var/quarantine
-  
+```  
 - Logged in:
+```
   /var/log/clamav/inotify.log
+```
 
 ---
 
 ## 📅 Daily Scan
 
 Runs every day at **2 AM**:
-
+```
 0 2 * * * clamscan -r /home --log=/var/log/clamav/daily.log
-
+```
 ---
 
 ## 📂 Important Paths
@@ -133,15 +135,15 @@ If not → services are automatically restarted.
 ## 🔍 Troubleshooting
 
 ### Check services:
-
+```
 systemctl status clamd@scan
 systemctl status clamav-freshclam
 systemctl status clamav-inotify
-
+```
 ### View logs:
-
+```
 tail -f /var/log/clamav/setup.log
-
+```
 ---
 
 ## ⚠️ Notes
