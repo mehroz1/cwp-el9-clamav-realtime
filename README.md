@@ -41,3 +41,46 @@ git clone https://github.com/yourusername/clam-auto.git
 cd clam-auto
 chmod +x clam-auto.sh
 sudo ./clam-auto.sh
+
+## ⚙️ What It Does
+
+### 📦 Installs
+- ClamAV
+- clamav-server-systemd
+- clamav-update
+- inotify-tools
+- SELinux utilities
+
+---
+
+### 🔧 Configures
+- /etc/clamd.d/scan.conf
+- Runtime directories
+- Permissions + SELinux contexts
+
+---
+
+### 🔄 Enables Services
+- clamd@scan
+- clamav-freshclam
+- clamav-inotify
+
+---
+
+## 👀 Real-Time Protection
+
+- **Watches:** /home
+
+### Detects:
+- File create
+- Modify
+- Move
+
+### Skips:
+- Cache/temp directories
+- Files larger than 50MB
+
+---
+
+### 🦠 On Virus Detection
+- File moved to:
