@@ -75,12 +75,12 @@ sudo ./clam-auto.sh
 
 - **Watches:** /home
 
-### Detects:
+#### Detects:
 - File create
 - Modify
 - Move
 
-### Skips:
+#### Skips:
 - Cache/temp directories
 - Files larger than 50MB
 
