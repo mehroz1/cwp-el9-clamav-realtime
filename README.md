@@ -5,6 +5,7 @@ Automated ClamAV Deployment + Real-Time Protection for EL9 (CWP Ready)
 ![ClamAV](https://img.shields.io/badge/ClamAV-Automated-green)
 ![Systemd](https://img.shields.io/badge/Systemd-Enabled-orange)
 ![SELinux](https://img.shields.io/badge/SELinux-Supported-red)
+![CWP](https://img.shields.io/badge/CWP-Compatible-orange)
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
 ---
