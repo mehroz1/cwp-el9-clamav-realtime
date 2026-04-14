@@ -11,6 +11,11 @@ Automated ClamAV Deployment + Real-Time Protection for EL9 (CWP Ready)
 
 ## 📌 Overview
 
+This repo provides two scripts:
+
+- **clam-auto.sh** → full automation with real-time protection (recommended)
+- **install-clamav.sh** → simple/basic automated installer without real-time protection
+
 clam-auto.sh is a fully automated ClamAV deployment script for Enterprise Linux 9 (EL9), optimized for Control Web Panel (CWP).
 
 It provides:
